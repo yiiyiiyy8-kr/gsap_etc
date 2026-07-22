@@ -619,6 +619,11 @@ h1 a img {
 .pin_scene {
   height: 100vh;
   background: #ddd;
+  overflow: hidden;
+  z-index: 2;
+  background:
+    radial-gradient(circle at 70% 22%, rgba(242, 208, 70, .16), transparent 30%),
+    linear-gradient(180deg, #11141b 0%, #191c25 100%);
 }
 
 /* horizontal_section */
