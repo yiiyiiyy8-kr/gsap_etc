@@ -1,329 +1,478 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yulssem - Product Designer & Vibe Maker</title>
+    <!-- 기본 SEO -->
+    <title>gsapetc</title>
+    <meta
+      name="description"
+      content="Product designer and vibe maker portfolio with responsive UI, brand, community, and motion case studies."
+    />
+    <meta
+      name="keywords"
+      content="Product Design, Vibe Maker, Portfolio, Responsive Web, GSAP, UI Design"
+    />
+    <meta name="author" content="yulssem" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6c84f" />
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- 파비콘 세트 (/favicon 폴더에 업로드) -->
+    <link rel="icon" href="favicon/favicon.ico" sizes="48x48" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32.png"
+    />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/icon-192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="favicon/icon-512.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>yulssem - Product Designer & Vibe Maker</title>
-  <!-- 기본 SEO -->
-  <title>gsapetc</title>
-  <meta name="description"
-    content="Product designer and vibe maker portfolio with responsive UI, brand, community, and motion case studies." />
-  <meta name="keywords" content="Product Design, Vibe Maker, Portfolio, Responsive Web, GSAP, UI Design" />
-  <meta name="author" content="yulssem" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f6c84f" />
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-  <!-- 파비콘 세트 (/favicon 폴더에 업로드) -->
-  <link rel="icon" href="favicon/favicon.ico" sizes="48x48" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png" />
-  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon/icon-192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon/icon-512.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
-  <script src="js/main.js" defer></script>
-</head>
-
-<body>
-  <header class="site_header" id="site_header">
-    <div class="container header_row">
-      <h1 class="brand_logo title_gra">
-        <a href="#"><img src="asset/fylogo.png" alt="FlowYulLab"></a>
-      </h1>
-      <nav class="primary_nav">
-        <a href="#hero" class="">Home</a>
-        <a href="#projects" class="">Projects</a>
-        <a href="#info" class="">Info</a>
-        <a href="#showcase" class="">Showcase</a>
-        <a href="#gallery" class="">Gallery</a>
-        <a href="#stats" class="">Stats</a>
-        <a href="#contact" class="">Contact</a>
-      </nav>
-      <button type="button" id="menu_toggle" class="icon_mdi_hamburger_menu" aria-hidden="true"></button>
-      <div class="mobile_panel" id="mobile_panel">
-        <nav class="mobile_nav">
-          <a href="#hero">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#info">Info</a>
-          <a href="#showcase">Showcase</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#stats">Stats</a>
-          <a href="#contact">Contact</a>
+  <body>
+    <header class="site_header" id="site_header">
+      <div class="container header_row">
+        <h1 class="brand_logo title_gra">
+          <a href="#"><img src="asset/fylogo.png" alt="FlowYulLab" /></a>
+        </h1>
+        <nav class="primary_nav">
+          <a href="#hero" class="">Home</a>
+          <a href="#projects" class="">Projects</a>
+          <a href="#info" class="">Info</a>
+          <a href="#showcase" class="">Showcase</a>
+          <a href="#gallery" class="">Gallery</a>
+          <a href="#stats" class="">Stats</a>
+          <a href="#contact" class="">Contact</a>
         </nav>
+        <button
+          type="button"
+          id="menu_toggle"
+          class="icon_mdi_hamburger_menu"
+          aria-hidden="true"
+        ></button>
+        <div class="mobile_panel" id="mobile_panel">
+          <nav class="mobile_nav">
+            <a href="#hero">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#info">Info</a>
+            <a href="#showcase">Showcase</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#stats">Stats</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
       </div>
-    </div><!-- /.container -->
-  </header>
-  <section class="hero_section" id="hero">
-    <figure>
-      <video src="asset/vid_logo.mp4" loop autoplay muted playsinline></video>
-    </figure>
-    <div class="container">
-      <h2 class="hero_title">Product Designer & Vibe Maker</h2>
-      <p class="hero_sub">I shape responsive interfaces, motion systems, and digital vibes for brands, communities, and
-        product experiences.</p>
-      <span class="magnet_zone"><a href="#projects" class="hero_cta cta_btn">Explore Work →</a></span>
-    </div><!-- //.container -->
-  </section><!-- //.hero_section -->
-  <section class="marquee_section features_section">
-    <div class="marquee_wrap">
-      <div class="marquee_row">
-        <div class="marquee_item title_gra">VIBE MAKING</div>
-        <div class="marquee_item title_gra">RESPONSIVE UI</div>
-        <div class="marquee_item title_gra">BRAND MOOD</div>
-        <div class="marquee_item title_gra">COMMUNITY UX</div>
-        <div class="marquee_item title_gra">GSAP MOTION</div>
-        <div class="marquee_item title_gra">DESIGN SYSTEM</div>
-      </div><!-- //.marquee_row -->
-    </div><!-- //.marquee_wrap -->
-    <div class="container" id="projects">
-      <h2>Selected <strong>Vibe Works</strong></h2>
-      <div class="feature_list">
-        <article class="feature_card tit_card">
-          <div class="tit_layer">
-            <span class="project_kicker">Concept 01 · Individual</span>
-            <div class="project_body">
-              <h3>
-                <strong><span class="title_line">Responsive</span><span class="title_line">Personal</span><span
-                    class="title_line">Renewal</span></strong>
-                <span>Responsive Renewal</span>
-              </h3>
-              <div class="mtauto">
-                <p class="project_summary"><span class="summary_line">A personal renewal project focused on</span><span
-                    class="summary_line">responsive layout and clear content flow,</span><span class="summary_line">with
-                    a
-                    polished digital identity.</span></p>
-                <p class="motion_phrase">Designing clearer screens, smoother motion, and a stronger personal web vibe.
-                </p>
-                <ul class="project_meta">
-                  <li>UI Design</li>
-                  <li>Publishing</li>
-                  <li>Motion Detail</li>
-                </ul>
+      <!-- /.container -->
+    </header>
+    <section class="hero_section" id="hero">
+      <figure>
+        <video src="asset/vid_logo.mp4" loop autoplay muted playsinline></video>
+      </figure>
+      <div class="container">
+        <h2 class="hero_title">Product Designer & Vibe Maker</h2>
+        <p class="hero_sub">
+          I shape responsive interfaces, motion systems, and digital vibes for
+          brands, communities, and product experiences.
+        </p>
+        <span class="magnet_zone"
+          ><a href="#projects" class="hero_cta cta_btn">Explore Work →</a></span
+        >
+      </div>
+      <!-- //.container -->
+    </section>
+    <!-- //.hero_section -->
+    <section class="marquee_section features_section">
+      <div class="marquee_wrap">
+        <div class="marquee_row">
+          <div class="marquee_item title_gra">VIBE MAKING</div>
+          <div class="marquee_item title_gra">RESPONSIVE UI</div>
+          <div class="marquee_item title_gra">BRAND MOOD</div>
+          <div class="marquee_item title_gra">COMMUNITY UX</div>
+          <div class="marquee_item title_gra">GSAP MOTION</div>
+          <div class="marquee_item title_gra">DESIGN SYSTEM</div>
+        </div>
+        <!-- //.marquee_row -->
+      </div>
+      <!-- //.marquee_wrap -->
+      <div class="container" id="projects">
+        <h2>Selected <strong>Vibe Works</strong></h2>
+        <div class="feature_list">
+          <article class="feature_card tit_card">
+            <div class="tit_layer">
+              <span class="project_kicker">Concept 01 · Individual</span>
+              <div class="project_body">
+                <h3>
+                  <strong
+                    ><span class="title_line">Responsive</span
+                    ><span class="title_line">Personal</span
+                    ><span class="title_line">Renewal</span></strong
+                  >
+                  <span>Responsive Renewal</span>
+                </h3>
+                <div class="mtauto">
+                  <p class="project_summary">
+                    <span class="summary_line"
+                      >A personal renewal project focused on</span
+                    ><span class="summary_line"
+                      >responsive layout and clear content flow,</span
+                    ><span class="summary_line"
+                      >with a polished digital identity.</span
+                    >
+                  </p>
+                  <p class="motion_phrase">
+                    Designing clearer screens, smoother motion, and a stronger
+                    personal web vibe.
+                  </p>
+                  <ul class="project_meta">
+                    <li>UI Design</li>
+                    <li>Publishing</li>
+                    <li>Motion Detail</li>
+                  </ul>
+                </div>
               </div>
-            </div><!-- //.project_body -->
-          </div><!-- //.tit_layer -->
-        </article>
-        <article class="feature_card tit_card">
-          <div class="tit_layer">
-            <span class="project_kicker">Concept 02 · Team</span>
-            <div class="project_body">
-              <h3><strong><span class="title_line">Responsive</span><span class="title_line">Personal</span><span
-                    class="title_line">Renewal</span></strong><span>Responsive Renewal</span></h3>
-              <div class="mtauto">
-                <p class="project_summary"><span class="summary_line">A personal renewal project focused on</span><span
-                    class="summary_line">responsive layout and clear content flow,</span><span class="summary_line">with
-                    a
-                    polished digital identity.</span></p>
-                <p class="motion_phrase">Designing clearer screens, smoother motion, and a stronger personal web vibe.
-                </p>
-                <ul class="project_meta">
-                  <li>UI Design</li>
-                  <li>Publishing</li>
-                  <li>Motion Detail</li>
-                </ul>
+              <!-- //.project_body -->
+            </div>
+            <!-- //.tit_layer -->
+          </article>
+          <article class="feature_card tit_card">
+            <div class="tit_layer">
+              <span class="project_kicker">Concept 02 · Team</span>
+              <div class="project_body">
+                <h3>
+                  <strong
+                    ><span class="title_line">Responsive</span
+                    ><span class="title_line">Personal</span
+                    ><span class="title_line">Renewal</span></strong
+                  ><span>Responsive Renewal</span>
+                </h3>
+                <div class="mtauto">
+                  <p class="project_summary">
+                    <span class="summary_line"
+                      >A personal renewal project focused on</span
+                    ><span class="summary_line"
+                      >responsive layout and clear content flow,</span
+                    ><span class="summary_line"
+                      >with a polished digital identity.</span
+                    >
+                  </p>
+                  <p class="motion_phrase">
+                    Designing clearer screens, smoother motion, and a stronger
+                    personal web vibe.
+                  </p>
+                  <ul class="project_meta">
+                    <li>UI Design</li>
+                    <li>Publishing</li>
+                    <li>Motion Detail</li>
+                  </ul>
+                </div>
               </div>
-            </div><!-- //.project_body -->
-          </div><!-- //.tit_layer -->
-        </article>
-        <article class="feature_card tit_card">
-          <div class="tit_layer">
-            <span class="project_kicker">Concept 03 · Team</span>
-            <div class="project_body">
-              <h3><strong><span class="title_line">Responsive</span><span class="title_line">Personal</span><span
-                    class="title_line">Renewal</span></strong><span>Responsive Renewal</span></h3>
-              <div class="mtauto">
-                <p class="project_summary"><span class="summary_line">A personal renewal project focused on</span><span
-                    class="summary_line">responsive layout and clear content flow,</span><span class="summary_line">with
-                    a
-                    polished digital identity.</span></p>
-                <p class="motion_phrase">Designing clearer screens, smoother motion, and a stronger personal web vibe.
-                </p>
-                <ul class="project_meta">
-                  <li>UI Design</li>
-                  <li>Publishing</li>
-                  <li>Motion Detail</li>
-                </ul>
+              <!-- //.project_body -->
+            </div>
+            <!-- //.tit_layer -->
+          </article>
+          <article class="feature_card tit_card">
+            <div class="tit_layer">
+              <span class="project_kicker">Concept 03 · Team</span>
+              <div class="project_body">
+                <h3>
+                  <strong
+                    ><span class="title_line">Responsive</span
+                    ><span class="title_line">Personal</span
+                    ><span class="title_line">Renewal</span></strong
+                  ><span>Responsive Renewal</span>
+                </h3>
+                <div class="mtauto">
+                  <p class="project_summary">
+                    <span class="summary_line"
+                      >A personal renewal project focused on</span
+                    ><span class="summary_line"
+                      >responsive layout and clear content flow,</span
+                    ><span class="summary_line"
+                      >with a polished digital identity.</span
+                    >
+                  </p>
+                  <p class="motion_phrase">
+                    Designing clearer screens, smoother motion, and a stronger
+                    personal web vibe.
+                  </p>
+                  <ul class="project_meta">
+                    <li>UI Design</li>
+                    <li>Publishing</li>
+                    <li>Motion Detail</li>
+                  </ul>
+                </div>
               </div>
-            </div><!-- //.project_body -->
-          </div><!-- //.tit_layer -->
+              <!-- //.project_body -->
+            </div>
+            <!-- //.tit_layer -->
+          </article>
+        </div>
+      </div>
+      <!-- //.projects -->
+      <div class="marquee_wrap reverse">
+        <div class="marquee_row">
+          <div class="marquee_item title_gra">VIBE MAKING</div>
+          <div class="marquee_item title_gra">RESPONSIVE UI</div>
+          <div class="marquee_item title_gra">BRAND MOOD</div>
+          <div class="marquee_item title_gra">COMMUNITY UX</div>
+          <div class="marquee_item title_gra">GSAP MOTION</div>
+          <div class="marquee_item title_gra">DESIGN SYSTEM</div>
+        </div>
+        <!-- //.marquee_row -->
+      </div>
+      <!-- //.marquee_wrap -->
+    </section>
+    <!-- //.features_section -->
+    <section class="info_section" id="info">
+      <div class="wrapper">
+        <div class="info_tit">
+          <h2>Vibe Making <strong>Process</strong></h2>
+          <p class="section_lead">
+            I start with a visual mood, organize the experience into clear
+            sections, and add motion where it makes the interface feel more
+            intentional.
+          </p>
+          <div class="sticky_box"></div>
+        </div>
+        <!-- //.info_tit -->
+        <div class="projects_all">
+          <div class="card">
+            <span class="process_number">01</span>
+            <h4>Find the Mood</h4>
+            <p>
+              I collect references, colors, textures, and keywords to define the
+              emotional direction before designing the first screen.
+            </p>
+          </div>
+          <div class="card">
+            <span class="process_number">02</span>
+            <h4>Build the Flow</h4>
+            <p>
+              I structure pages with clear sections, readable hierarchy, and
+              responsive layouts so the content works across different screen
+              sizes.
+            </p>
+          </div>
+          <div class="card">
+            <span class="process_number">03</span>
+            <h4>Add Motion Detail</h4>
+            <p>
+              I use scroll, hover, and transition details to guide attention
+              without making the interface feel noisy.
+            </p>
+          </div>
+        </div>
+        <!-- //.projects_all -->
+      </div>
+      <!-- //.wrapper -->
+    </section>
+    <!-- //.info_section -->
+    <section class="pin_scene" id="showcase">
+      <div class="pin_layer">
+        <div
+          class="pin_bg"
+          id="pin_bg"
+          style="background-image: url(&quot;asset/case_gallery.png&quot;)"
+        ></div>
+        <div class="pin_overlay"></div>
+        <div class="pin_copy">
+          <span class="section_tag">Design Gallery</span>
+          <h2>Visual Fragments for Vibe Making</h2>
+          <p>
+            A collection of interface moods, brand textures, motion frames, and
+            responsive moments that shape each project's atmosphere.
+          </p>
+        </div>
+        <div class="float_wrap">
+          <div class="photo p1">
+            <span class="photo_label">Visual Direction</span>
+          </div>
+          <div class="photo p2">
+            <span class="photo_label">Color Mood</span>
+          </div>
+          <div class="photo p3">
+            <span class="photo_label">Interface Detail</span>
+          </div>
+          <div class="photo p4">
+            <span class="photo_label">Motion Frame</span>
+          </div>
+          <div class="photo p5">
+            <span class="photo_label">Brand Texture</span>
+          </div>
+          <div class="photo p6">
+            <span class="photo_label">Responsive Moment</span>
+          </div>
+        </div>
+      </div>
+      <!-- //.pin_layer -->
+    </section>
+    <!-- //.pin_scene -->
+    <section class="horizontal_section" id="gallery">
+      <div class="track">
+        <article class="case_panel">
+          <div class="case_copy">
+            <span class="case_kicker">CASE 01</span>
+            <h2>Personal Responsive Renewal</h2>
+            <p>
+              A mobile-first renewal concept that reorganizes content, improves
+              visual rhythm, and creates a stronger personal brand impression.
+            </p>
+            <ul class="case_meta">
+              <li>Desktop / Tablet / Mobile</li>
+              <li>Responsive Layout</li>
+              <li>Personal Web App</li>
+            </ul>
+          </div>
+          <div class="case_media" aria-hidden="true">
+            <div class="case_image case_crop_01"></div>
+            <div class="case_image case_crop_02"></div>
+            <div class="case_image case_crop_03"></div>
+          </div>
+        </article>
+        <article class="case_panel">
+          <div class="case_copy">
+            <span class="case_kicker">CASE 02</span>
+            <h2>K-Brand Team Project</h2>
+            <p>
+              A brand website concept built around Korean visual identity,
+              editorial product storytelling, and a polished campaign mood.
+            </p>
+            <ul class="case_meta">
+              <li>Team Project</li>
+              <li>Brand Storytelling</li>
+              <li>Visual Direction</li>
+            </ul>
+          </div>
+          <div class="case_media" aria-hidden="true">
+            <div class="case_image case_crop_04"></div>
+            <div class="case_image case_crop_05"></div>
+            <div class="case_image case_crop_06"></div>
+          </div>
+        </article>
+        <article class="case_panel">
+          <div class="case_copy">
+            <span class="case_kicker">CASE 03</span>
+            <h2>AI Fandom Community</h2>
+            <p>
+              A community web app concept that combines fan content, chatbot
+              support, and smoother navigation for a more connected fandom
+              experience.
+            </p>
+            <ul class="case_meta">
+              <li>AI Chatbot</li>
+              <li>Community UX</li>
+              <li>Fan Engagement</li>
+            </ul>
+          </div>
+          <div class="case_media" aria-hidden="true">
+            <div class="case_image case_crop_07"></div>
+            <div class="case_image case_crop_08"></div>
+            <div class="case_image case_crop_09"></div>
+          </div>
+        </article>
+        <article class="case_panel">
+          <div class="case_copy">
+            <span class="case_kicker">CASE 04</span>
+            <h2>Motion UI Study</h2>
+            <p>
+              A scroll-based motion study that tests reveal timing, layered
+              visuals, and interaction rhythm across a long editorial page.
+            </p>
+            <ul class="case_meta">
+              <li>ScrollTrigger</li>
+              <li>Hover Motion</li>
+              <li>Visual Rhythm</li>
+            </ul>
+          </div>
+          <div class="case_media" aria-hidden="true">
+            <div class="case_image case_crop_02"></div>
+            <div class="case_image case_crop_05"></div>
+            <div class="case_image case_crop_08"></div>
+          </div>
+        </article>
+        <article class="case_panel">
+          <div class="case_copy">
+            <span class="case_kicker">CASE 05</span>
+            <h2>Vibe Making System</h2>
+            <p>
+              A visual system study that connects colors, typography, image
+              mood, and section rhythm into one portfolio direction.
+            </p>
+            <ul class="case_meta">
+              <li>Mood Board</li>
+              <li>Design Tokens</li>
+              <li>Portfolio System</li>
+            </ul>
+          </div>
+          <div class="case_media" aria-hidden="true">
+            <div class="case_image case_crop_03"></div>
+            <div class="case_image case_crop_06"></div>
+            <div class="case_image case_crop_09"></div>
+          </div>
         </article>
       </div>
-    </div><!-- //.projects -->
-    <div class="marquee_wrap reverse">
-      <div class="marquee_row ">
-        <div class="marquee_item title_gra">VIBE MAKING</div>
-        <div class="marquee_item title_gra">RESPONSIVE UI</div>
-        <div class="marquee_item title_gra">BRAND MOOD</div>
-        <div class="marquee_item title_gra">COMMUNITY UX</div>
-        <div class="marquee_item title_gra">GSAP MOTION</div>
-        <div class="marquee_item title_gra">DESIGN SYSTEM</div>
-      </div><!-- //.marquee_row -->
-    </div><!-- //.marquee_wrap -->
-  </section><!-- //.features_section -->
-  <section class="info_section" id="info">
-    <div class="wrapper">
-      <div class="info_tit">
-        <h2>Vibe Making <strong>Process</strong></h2>
-        <p class="section_lead">I start with a visual mood, organize the experience into clear sections, and add motion
-          where it makes the interface feel more intentional.</p>
-        <div class="sticky_box">
-        </div>
-      </div><!-- //.info_tit -->
-      <div class="projects_all">
-        <div class="card">
-          <span class="process_number">01</span>
-          <h4>Find the Mood</h4>
-          <p>I collect references, colors, textures, and keywords to define the emotional direction before designing the
-            first screen.</p>
-        </div>
-        <div class="card">
-          <span class="process_number">02</span>
-          <h4>Build the Flow</h4>
-          <p>I structure pages with clear sections, readable hierarchy, and responsive layouts so the content works
-            across different screen sizes.</p>
-        </div>
-        <div class="card">
-          <span class="process_number">03</span>
-          <h4>Add Motion Detail</h4>
-          <p>I use scroll, hover, and transition details to guide attention without making the interface feel noisy.</p>
-        </div>
-      </div><!-- //.projects_all -->
-    </div><!-- //.wrapper -->
-  </section><!-- //.info_section -->
-  <section class="pin_scene" id="showcase">
-    <div class="pin_layer">
-      <div class="pin_bg" id="pin_bg" style="background-image: url('asset/case_gallery.png');"></div>
-      <div class="pin_overlay"></div>
-      <div class="pin_copy">
-        <span class="section_tag">Design Gallery</span>
-        <h2>Visual Fragments for Vibe Making</h2>
-        <p>A collection of interface moods, brand textures, motion frames, and responsive moments that shape each
-          project's atmosphere.</p>
+    </section>
+    <!-- //.horizontal_section -->
+    <section class="stats_section" id="stats">
+      <div class="container">
+        <h2>Practice into Portfolio</h2>
+        <ul class="'stats_list">
+          <li class="stat_box">
+            <div class="stat_value" data-count-to="5" data-pad="2">00</div>
+            <div class="stat_label">Concept Projects</div>
+          </li>
+          <li class="stat_box">
+            <div class="stat_value" data-count-to="8" data-pad="2">05</div>
+            <div class="stat_label">Motion Studies</div>
+          </li>
+          <li class="stat_box">
+            <div class="stat_value" data-count-to="10" data-pad="2">08</div>
+            <div class="stat_label">Core Tools</div>
+          </li>
+        </ul>
       </div>
-      <div class="float_wrap">
-        <div class="photo p1">
-          <span class="photo_label">Visual Direction</span>
-        </div>
-        <div class="photo p2">
-          <span class="photo_label">Color Mood</span>
-        </div>
-        <div class="photo p3">
-          <span class="photo_label">Interface Detail</span>
-        </div>
-        <div class="photo p4">
-          <span class="photo_label">Motion Frame</span>
-        </div>
-        <div class="photo p5">
-          <span class="photo_label">Brand Texture</span>
-        </div>
-        <div class="photo p6">
-          <span class="photo_label">Responsive Moment</span>
-        </div>
-      </div>
-    </div><!-- //.pin_layer -->
-  </section><!-- //.pin_scene -->
-  <section class="horizontal_section" id="gallery">
-    <div class="track">
-      <article class="case_panel">
-        <div class="case_copy">
-          <span class="case_kicker">CASE 01</span>
-          <h2>Personal Responsive Renewal</h2>
-          <p>A mobile-first renewal concept that reorganizes content, improves visual rhythm, and creates a stronger
-            personal brand impression.</p>
-          <ul class="case_meta">
-            <li>Desktop / Tablet / Mobile</li>
-            <li>Responsive Layout</li>
-            <li>Personal Web App</li>
-          </ul>
-        </div>
-        <div class="case_media" aria-hidden="true">
-          <div class="case_image case_crop_01"></div>
-          <div class="case_image case_crop_02"></div>
-          <div class="case_image case_crop_03"></div>
-        </div>
-      </article>
-      <article class="case_panel">
-        <div class="case_copy">
-          <span class="case_kicker">CASE 02</span>
-          <h2>K-Brand Team Project</h2>
-          <p>A brand website concept built around Korean visual identity, editorial product storytelling, and a polished
-            campaign mood.</p>
-          <ul class="case_meta">
-            <li>Team Project</li>
-            <li>Brand Storytelling</li>
-            <li>Visual Direction</li>
-          </ul>
-        </div>
-        <div class="case_media" aria-hidden="true">
-          <div class="case_image case_crop_04"></div>
-          <div class="case_image case_crop_05"></div>
-          <div class="case_image case_crop_06"></div>
-        </div>
-      </article>
-      <article class="case_panel">
-        <div class="case_copy">
-          <span class="case_kicker">CASE 03</span>
-          <h2>AI Fandom Community</h2>
-          <p>A community web app concept that combines fan content, chatbot support, and smoother navigation for a more
-            connected fandom experience.</p>
-          <ul class="case_meta">
-            <li>AI Chatbot</li>
-            <li>Community UX</li>
-            <li>Fan Engagement</li>
-          </ul>
-        </div>
-        <div class="case_media" aria-hidden="true">
-          <div class="case_image case_crop_07"></div>
-          <div class="case_image case_crop_08"></div>
-          <div class="case_image case_crop_09"></div>
-        </div>
-      </article>
-      <article class="case_panel">
-        <div class="case_copy">
-          <span class="case_kicker">CASE 04</span>
-          <h2>Motion UI Study</h2>
-          <p>A scroll-based motion study that tests reveal timing, layered visuals, and interaction rhythm across a
-            long editorial page.</p>
-          <ul class="case_meta">
-            <li>ScrollTrigger</li>
-            <li>Hover Motion</li>
-            <li>Visual Rhythm</li>
-          </ul>
-        </div>
-        <div class="case_media" aria-hidden="true">
-          <div class="case_image case_crop_02"></div>
-          <div class="case_image case_crop_05"></div>
-          <div class="case_image case_crop_08"></div>
-        </div>
-      </article>
-      <article class="case_panel">
-        <div class="case_copy">
-          <span class="case_kicker">CASE 05</span>
-          <h2>Vibe Making System</h2>
-          <p>A visual system study that connects colors, typography, image mood, and section rhythm into one portfolio
-            direction.</p>
-          <ul class="case_meta">
-            <li>Mood Board</li>
-            <li>Design Tokens</li>
-            <li>Portfolio System</li>
-          </ul>
-        </div>
-        <div class="case_media" aria-hidden="true">
-          <div class="case_image case_crop_03"></div>
-          <div class="case_image case_crop_06"></div>
-          <div class="case_image case_crop_09"></div>
-        </div>
-      </article>
+    </section>
+    <!-- //.stats_section -->
+    <section class="cta_section" id="contact">
+      <div class="container">
+        <div class="container">
+      <h2>Let’s make a clear vibe for your next digital experience.</h2>
+      <p>Open to portfolio feedback, collaboration, and creative web interaction projects.</p>
+      <span class="magnet_zone"><a href="mailto:yulssem_nim@naver.com" class="cta_btn">Get in touch →</a></span>
     </div>
-  </section><!-- //.horizontal_section -->
-  <section class="stats_section" id="stats"></section><!-- //.stats_section -->
-  <section class="cta_section" id="contact"></section><!-- //.cta_section -->
-</body>
-
+      </div>
+    </section>
+    <!-- //.cta_section -->
+  </body>
 </html>
